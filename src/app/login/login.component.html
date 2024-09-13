@@ -1,0 +1,17 @@
+<div class="login-modal">
+  <h2>Iniciar Sesion</h2>
+  <form (submit)="onSubmit()">
+    <div>
+      <label for="email">Correo</label>
+      <input type="email" id="email" [(ngModel)]="email" name="email" placeholder="email@ejemplo.com">
+    </div>
+    <div>
+      <label for="password">Clave</label>
+      <input type="password" id="password" [(ngModel)]="password" name="password">
+    </div>
+    <div class="buttons">
+      <button type="button" (click)="close()">Cerrar</button>
+      <button type="submit">Iniciar sesion</button>
+    </div>
+  </form>
+</div>
